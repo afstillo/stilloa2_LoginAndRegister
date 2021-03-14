@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <!--A ScrollView is used to facilitate landscape mode.-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mango5"
+            android:layout_width="157dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mango"
+            android:contentDescription="@string/content_descriptor" />
+
+        <TextView
+            android:id="@+id/success"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mango5" />
+        <!--TextView for welcoming the user.-->
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="monospace"
+            android:onClick="onClick"
+            android:text="@string/logout"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/success" />
+        <!--Button to return the user to the main activity.-->
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:fontFamily="monospace"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/success" />
+        <!--TextView for displaying the information of the user.-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

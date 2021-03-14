@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">stilloa2_LoginAndRegister</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="date_of_birth_label">Date of Birth (MM/DD/YYYY)</string>
+    <string name="last_name_label">Last Name</string>
+    <string name="first_name_label">First Name</string>
+    <string name="username_not_found">Invalid email. Please register first.</string>
+    <string name="incorrect_password">Incorrect password. Try again.</string>
+    <string name="empty_fields">Please fill out all fields.</string>
+    <string name="content_descriptor">Mango</string>
+</resources>

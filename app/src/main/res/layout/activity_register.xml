@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!--A ScrollView is used to facilitate landscape mode.-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/register1"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="120dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="monospace"
+            android:onClick="onClick"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/r_password_confirm" />
+        <!--Button for confirming registration.-->
+
+        <EditText
+            android:id="@+id/r_password_confirm"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/r_password"
+            android:autofillHints="@string/confirm_password_label" />
+        <!--EditText for confirming password.-->
+
+        <TextView
+            android:id="@+id/r_label7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textfield_height"
+            android:fontFamily="monospace"
+            android:text="@string/confirm_password_label"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/r_password_confirm"
+            app:layout_constraintStart_toStartOf="@+id/r_password_confirm"
+            android:labelFor="@id/r_password_confirm"/>
+        <!--TextView for password confirmation label.-->
+
+        <TextView
+            android:id="@+id/r_label6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/date_of_birth_label"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/r_date_of_birth"
+            app:layout_constraintStart_toStartOf="@+id/r_date_of_birth"
+            android:labelFor="@id/r_date_of_birth"/>
+        <!--TextView for date of birth label.-->
+
+        <EditText
+            android:id="@+id/r_lastname"
+            android:layout_width="@dimen/edittext_width_small"
+            android:layout_height="@dimen/edittext_height"
+            android:background="@color/white"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/r_email"
+            app:layout_constraintTop_toTopOf="@+id/r_firstname"
+            android:autofillHints="@string/email_label" />
+        <!--EditText for last name entry.-->
+
+        <TextView
+            android:id="@+id/r_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textfield_height"
+            android:fontFamily="monospace"
+            android:text="@string/last_name_label"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/r_lastname"
+            app:layout_constraintStart_toStartOf="@+id/r_lastname"
+            android:labelFor="@id/r_lastname"/>
+        <!--TextView for last name label.-->
+
+        <EditText
+            android:id="@+id/r_firstname"
+            android:layout_width="@dimen/edittext_width_small"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/r_email"
+            app:layout_constraintTop_toBottomOf="@+id/mango4"
+            android:autofillHints="@string/first_name_label" />
+        <!--EditText for first name entry.-->
+
+        <TextView
+            android:id="@+id/r_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textfield_height"
+            android:fontFamily="monospace"
+            android:text="@string/first_name_label"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/r_firstname"
+            app:layout_constraintStart_toStartOf="@+id/r_firstname"
+            android:labelFor="@id/r_firstname"/>
+        <!--TextView for first name label.-->
+
+        <EditText
+            android:id="@+id/r_email"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/r_date_of_birth"
+            android:autofillHints="@string/date_of_birth_label" />
+        <!--EditText for email address entry.-->
+
+        <TextView
+            android:id="@+id/r_label3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textfield_height"
+            android:fontFamily="monospace"
+            android:text="@string/password_label"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/r_password"
+            app:layout_constraintStart_toStartOf="@+id/r_password"
+            android:labelFor="@id/r_password"/>
+        <!--TextView for password label.-->
+
+        <EditText
+            android:id="@+id/r_password"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/r_email"
+            android:autofillHints="@string/date_of_birth_label" />
+        <!--EditText for password entry.-->
+
+        <TextView
+            android:id="@+id/r_label4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textfield_height"
+            android:fontFamily="monospace"
+            android:text="@string/email_label"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/r_email"
+            app:layout_constraintStart_toStartOf="@+id/r_email"
+            android:labelFor="@id/r_email"/>
+        <!--TextView for email address label.-->
+
+        <ImageView
+            android:id="@+id/mango4"
+            android:layout_width="157dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mango"
+            android:contentDescription="@string/content_descriptor" />
+
+        <TextView
+            android:id="@+id/r_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toTopOf="@+id/register1"
+            app:layout_constraintStart_toStartOf="@+id/register1" />
+        <!--Blank TextView for errors the user makes.-->
+
+        <EditText
+            android:id="@+id/r_date_of_birth"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintStart_toStartOf="@+id/r_email"
+            app:layout_constraintTop_toBottomOf="@+id/r_firstname"
+            android:autofillHints="@string/date_of_birth_label" />
+        <!--EditText for birthday entry.-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

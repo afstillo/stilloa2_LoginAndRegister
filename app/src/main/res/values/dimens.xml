@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created to keep widget dimensions consistent throughout the application-->
+<resources>
+    <dimen name="edittext_width">210dp</dimen>
+    <dimen name="edittext_height">25dp</dimen>
+    <dimen name="edittext_width_small">100dp</dimen>
+    <dimen name="textfield_height">20dp</dimen>
+    <dimen name="button_height">35dp</dimen>
+    <dimen name="button_width">210dp</dimen>
+</resources>
+

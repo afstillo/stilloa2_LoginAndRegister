@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <Button
+        android:id="@+id/login1"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
+        android:onClick="onClick"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+    <!--Button to confirm login.-->
+
+    <ImageView
+        android:id="@+id/mango"
+        android:layout_width="157dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mango"
+        android:contentDescription="@string/content_descriptor"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mango"
+        android:autofillHints="@string/email_label" />
+    <!--EditText for email entry.-->
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_marginTop="45dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:autofillHints="@string/password_label"/>
+    <!--EditText for password entry.-->
+
+    <TextView
+        android:id="@+id/l_label1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/textfield_height"
+        android:fontFamily="monospace"
+        android:text="@string/email_label"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        android:labelFor="@id/email"/>
+    <!--TextView email label.-->
+
+    <TextView
+        android:id="@+id/l_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/textfield_height"
+        android:fontFamily="monospace"
+        android:text="@string/password_label"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        android:labelFor="@id/password"/>
+    <!--TextView password label.-->
+
+    <TextView
+        android:id="@+id/l_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/textfield_height"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/login1"
+        app:layout_constraintStart_toStartOf="@+id/login1"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+    <!--Blank TextView for errors the user makes.-->
+</androidx.constraintlayout.widget.ConstraintLayout>
